@@ -289,7 +289,4 @@ Check these documents:
 - **Setup Help**: `START_HERE.md`
 
 ---
-
-**You've got this! Let's activate your app! 🚀**
-
-Next step: Pick a guide and start Firebase setup.
+To run the project on your Local you have to setup the {FIREBASE} Configurations with the app
