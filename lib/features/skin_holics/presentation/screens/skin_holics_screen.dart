@@ -421,7 +421,7 @@ class _Step1SelectService extends ConsumerWidget {
           return const EmptyStateWidget(
             title: 'No services found',
             subtitle:
-                'No data in Firebase collection "skin_services" yet. Add services in Firebase and reload.',
+                'No data in Firebase collection "skin_services" yet. Add services in the Firebase and reload.',
             icon: Icons.spa_outlined,
           );
         }
