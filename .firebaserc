@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "thee-holics",
+    "stag": "thee-holics"
+  },
+  "targets": {},
+  "etags": {}
+}

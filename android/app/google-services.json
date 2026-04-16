@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "590639006018",
+    "project_id": "thee-holics",
+    "storage_bucket": "thee-holics.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590639006018:android:8e7bc8b470df38b00988db",
+        "android_client_info": {
+          "package_name": "com.example.the_holics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "590639006018-o4ogs3jpr8vb1e6rdmni3bprglt7ph1n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBawPsnkKcQfDUL_CneY4hR_9qiKY72Sz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "590639006018-o4ogs3jpr8vb1e6rdmni3bprglt7ph1n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "590639006018-548s38hkqvbfvr9klgq34sp35v32jlth.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.theHolics"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

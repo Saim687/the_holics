@@ -1,0 +1,33 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Users can read/write their own files
+    match /users/{uid}/{allPaths=**} {
+      allow read, write: if request.auth.uid == uid;
+    }
+
+    // Admins can read user uploads for verification
+    match /users/{uid}/payment_proofs/{allPaths=**} {
+      allow read: if request.auth.token.admin == true ||
+          get(/databases/(default)/documents/users/$(request.auth.uid)).data.role == "admin";
+    }
+    
+    // Public files (readable by all, writable by admins)
+    match /public/{allPaths=**} {
+      allow read: if request.auth != null;
+      allow write: if request.auth.token.admin == true;
+    }
+    
+    // Body Holics content
+    match /body_holics/{allPaths=**} {
+      allow read: if request.auth != null;
+      allow write: if request.auth.token.admin == true;
+    }
+    
+    // Skin Holics content
+    match /skin_holics/{allPaths=**} {
+      allow read: if request.auth != null;
+      allow write: if request.auth.token.admin == true;
+    }
+  }
+}
